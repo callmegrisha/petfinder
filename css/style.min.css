@@ -1,0 +1,372 @@
+.title {
+  font-family: "DMSans", sans-serif;
+  font-weight: 700;
+}
+
+.label, .button {
+  font-family: "DMSans", sans-serif;
+  font-weight: 500;
+}
+
+body, .auth__label span {
+  font-family: "DMSans", sans-serif;
+  font-weight: 400;
+}
+
+.auth__input-checkbox {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+@font-face {
+  font-family: "DMSans";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/DMSans-Bold.woff2") format("woff2"), url("../fonts/DMSans-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DMSans";
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/DMSans-Medium.woff2") format("woff2"), url("../fonts/DMSans-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DMSans";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/DMSans-Regular.woff2") format("woff2"), url("../fonts/DMSans-Regular.woff") format("woff");
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background-color: #E5E5E5;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #928B8B;
+}
+
+.full-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 60px 0 20px;
+}
+
+.title {
+  font-size: 39px;
+  color: #202020;
+  margin-bottom: 40px;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  text-align: left;
+}
+
+.label span {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.input {
+  display: block;
+  height: 48px;
+  margin-bottom: 20px;
+  outline: transparent;
+  border: 1px solid #DFDFDF;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input:focus {
+  border: 1px solid #FE4A59;
+}
+
+.input:active {
+  border: 1px solid #FE4A59;
+}
+
+.button {
+  border: none;
+  border-radius: 30px;
+  background-color: #FE4A59;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  padding: 15px 0;
+  width: 100%;
+  margin-bottom: 24px;
+  outline: transparent;
+  cursor: pointer;
+}
+
+.button:focus {
+  background-color: #FF2E3F;
+}
+
+.button:active {
+  background-color: #FF2E3F;
+}
+
+.button:hover {
+  background-color: #FF2E3F;
+}
+
+.go-home {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.go-home__link {
+  font-size: 14px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #928B8B;
+  margin: 0 auto;
+  outline: transparent;
+}
+
+.go-home__link:focus {
+  color: #FE4A59;
+}
+
+.go-home__link:hover {
+  color: #FE4A59;
+}
+
+.auth {
+  margin: 0 auto;
+  max-width: 520px;
+  min-height: 505px;
+  padding: 42px 51px 33px 49px;
+  background-color: #fff;
+  text-align: center;
+  -webkit-box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.auth__subtitle {
+  display: block;
+  margin-bottom: 13px;
+}
+
+.auth__title {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.auth__input {
+  width: 419px;
+}
+
+.auth__label {
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.auth__label span {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #FE4A59;
+}
+
+.auth__password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 29px;
+}
+
+.auth__input-checkbox:checked + .auth__checkbox {
+  background-image: url("../images/icons/check.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.auth__checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #FE4A59;
+  border-radius: 4px;
+  margin-right: 9px;
+}
+
+.auth__forgot {
+  font-size: 14px;
+  outline: transparent;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.auth__forgot:focus {
+  border-bottom: 1px solid #928B8B;
+}
+
+.auth__forgot:hover {
+  color: #FE4A59;
+  border-bottom: 1px solid #FE4A59;
+}
+
+.auth__sign-up {
+  font-size: 14px;
+}
+
+.auth__sign-up a {
+  color: #FE4A59;
+  outline: transparent;
+}
+
+.auth__sign-up a:focus {
+  border-bottom: 1px solid #FE4A59;
+}
+
+.auth__sign-up a:hover {
+  color: #FE4A59;
+  border-bottom: 1px solid #FE4A59;
+}
+
+.set-password {
+  margin: 0 auto;
+  max-width: 520px;
+  padding: 42px 51px 33px 49px;
+  background-color: #fff;
+  text-align: center;
+  -webkit-box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.set-password__btn {
+  margin-bottom: 0;
+}
+
+.password-notify {
+  margin: 0 auto;
+  max-width: 520px;
+  padding: 36px 33px 32px 33px;
+  background-color: #fff;
+  text-align: center;
+  -webkit-box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.password-notify__title {
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 34px;
+  position: relative;
+}
+
+.password-notify__title::before {
+  position: absolute;
+  content: '';
+  background-image: url("../images/icons/gold-key.svg");
+  top: 4px;
+  left: 0;
+  width: 20px;
+  height: 10px;
+}
+
+.password-notify__text {
+  color: #202020;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 17px;
+}
+
+.password-notify__link {
+  font-size: 16px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #FE4A59;
+  outline: transparent;
+}
+
+.password-notify__link:focus {
+  color: #fd0015;
+}
+
+.password-notify__link:hover {
+  color: #fd0015;
+}
