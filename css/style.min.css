@@ -1,9 +1,9 @@
-.title, .menu__link, .connect__subtitle, .tags__more, .tag-card__title, .tag-card__btn, .admin__email, .table__item--title, .table__item-tag {
+.title, .menu__link, .connect__subtitle, .tags__more, .tag-card__title, .tag-card__btn, .dashboard__email, .table__item--title, .table__item-tag {
   font-family: "DMSans", sans-serif;
   font-weight: 700;
 }
 
-.label, .button, .steps, .select, .switch__slider::after, .breadcrumbs__item, .register-item__max, .id-form__btn, .footer__link, .admin__avatar span, .admin__name, .table__item, .pagination__link {
+.label, .button, .steps, .select, .switch__slider::after, .breadcrumbs__item, .register-item__max, .id-form__btn, .footer__link, .dashboard__avatar span, .dashboard__name, .table__item, .pagination__link {
   font-family: "DMSans", sans-serif;
   font-weight: 500;
 }
@@ -1738,13 +1738,13 @@ ul.tabs {
   color: #FE4A59;
 }
 
-.admin {
+.dashboard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.admin__nav {
+.dashboard__nav {
   position: fixed;
   background-color: #F8F8F8;
   max-width: 212px;
@@ -1754,11 +1754,11 @@ ul.tabs {
   top: 0;
 }
 
-.admin ul.admin__tabs {
+.dashboard ul.dashboard__tabs {
   margin-bottom: 498px;
 }
 
-.admin__tab {
+.dashboard__tab {
   position: relative;
   padding: 0 35px 0 53px;
   font-size: 16px;
@@ -1769,7 +1769,7 @@ ul.tabs {
   cursor: pointer;
 }
 
-.admin__tab::before {
+.dashboard__tab::before {
   position: absolute;
   content: '';
   left: 19px;
@@ -1778,30 +1778,30 @@ ul.tabs {
   height: 21px;
 }
 
-.admin__tab:hover {
+.dashboard__tab:hover {
   border-left: 2px solid #FE4A59;
 }
 
-.admin__tab--active {
+.dashboard__tab--active {
   border-left: 2px solid #FE4A59;
   background-color: #fff;
 }
 
-.admin__tab--dashboard::before {
+.dashboard__tab--dashboard::before {
   background-image: url("../images/icons/dashboard.svg");
 }
 
-.admin__tab--analytics::before {
+.dashboard__tab--analytics::before {
   background-image: url("../images/icons/leaderboard.svg");
   width: 22px;
   height: 21px;
 }
 
-.admin__tab--account::before {
+.dashboard__tab--account::before {
   background-image: url("../images/icons/person.svg");
 }
 
-.admin__username {
+.dashboard__username {
   padding: 0 18px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1818,7 +1818,7 @@ ul.tabs {
           justify-content: center;
 }
 
-.admin__profile {
+.dashboard__profile {
   max-width: 176px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1830,7 +1830,7 @@ ul.tabs {
   margin-bottom: 16px;
 }
 
-.admin__avatar {
+.dashboard__avatar {
   width: 43px;
   height: 43px;
   background-color: #fff;
@@ -1839,18 +1839,18 @@ ul.tabs {
   margin-right: 7px;
 }
 
-.admin__avatar span {
+.dashboard__avatar span {
   display: block;
   font-size: 13px;
   color: #202020;
 }
 
-.admin__name {
+.dashboard__name {
   color: #202020;
   margin-bottom: 3px;
 }
 
-.admin__logout {
+.dashboard__logout {
   width: 100%;
   height: 27px;
   font-size: 14px;
@@ -1864,7 +1864,7 @@ ul.tabs {
   cursor: pointer;
 }
 
-.admin__logout::before {
+.dashboard__logout::before {
   position: absolute;
   content: '';
   left: 7px;
@@ -1873,19 +1873,19 @@ ul.tabs {
   height: 15px;
 }
 
-.admin__logout:focus {
+.dashboard__logout:focus {
   border: 1px solid #FE4A59;
 }
 
-.admin__logout:hover {
+.dashboard__logout:hover {
   border: 1px solid #FE4A59;
 }
 
-.admin__logout:active {
+.dashboard__logout:active {
   border: 1px solid #FE4A59;
 }
 
-.admin__content {
+.dashboard__content {
   background-color: #fff;
   width: 100%;
   padding: 25px 30px 25px 232px;
@@ -2183,13 +2183,13 @@ ul.table {
   display: block;
   background-color: #fff;
   border: 1px solid #DFDFDF;
+  border-radius: 8px;
   margin-bottom: 28px;
 }
 
 .buy-tags__top {
-  border: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
   background-color: #F8F8F8;
-  border-radius: 8px;
   padding: 25px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
