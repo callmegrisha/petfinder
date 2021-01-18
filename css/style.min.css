@@ -2142,6 +2142,7 @@ ul.tabs {
   border: 1px solid #DFDFDF;
   border-radius: 8px;
   margin-bottom: 65px;
+  overflow: hidden;
 }
 
 .table__header {
@@ -2153,7 +2154,7 @@ ul.tabs {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 17px 22px 17px 22px;
+  padding: 17px 0 17px 22px;
   font-size: 14px;
   color: #7B7B7B;
   text-transform: uppercase;
@@ -2179,7 +2180,7 @@ ul.tabs {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 17px 22px 17px 22px;
+  padding: 17px 0px 17px 22px;
   font-size: 14px;
   color: #202020;
   background-color: #FFFFFF;
@@ -2308,9 +2309,10 @@ ul.tabs {
 }
 
 .table__item-state {
-  max-width: 117px;
+  position: relative;
+  max-width: 140px;
   width: 100%;
-  padding: 0 14px;
+  padding: 0 10px;
 }
 
 .table__item-state--title {
@@ -2335,10 +2337,20 @@ ul.tabs {
   }
 }
 
+.table__item-state--block {
+  background-image: url("../images/icons/lock-black.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 14px;
+  height: 17px;
+  position: absolute;
+  right: 14px;
+  top: -2px;
+}
+
 .table__item-actions {
-  max-width: 233px;
+  max-width: 250px;
   width: 100%;
-  padding: 0 8px;
 }
 
 @media (max-width: 600px) {
@@ -2415,6 +2427,10 @@ ul.tabs {
   height: 32px;
   cursor: pointer;
   outline: transparent;
+}
+
+.table__item-btn:not(:last-child) {
+  margin-right: 10px;
 }
 
 .table__item-btn:focus {
