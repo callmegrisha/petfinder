@@ -1622,6 +1622,7 @@ ul.tabs {
 
 .tags__btn--prev {
   background-image: url("../images/icons/arrow-left.svg");
+  margin-right: 12px;
 }
 
 .tags__btn--next {
