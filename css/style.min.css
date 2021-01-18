@@ -1857,16 +1857,19 @@ ul.tabs {
   left: 0;
   bottom: 0;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 1330px) {
   .dashboard__nav {
     left: -500px;
   }
-}
-
-.dashboard ul.dashboard__tabs {
-  margin-bottom: 498px;
 }
 
 .dashboard__tab {
@@ -1913,7 +1916,8 @@ ul.tabs {
 }
 
 .dashboard__username {
-  padding: 0 18px;
+  margin-top: auto;
+  padding: 0 18px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
