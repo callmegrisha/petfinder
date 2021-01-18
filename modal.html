@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trace & Return | Register</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="modal">
+
+        <div class="modal__inner">
+
+
+            <div class="search-enabled">
+                    
+                <span class="title title--modal search-enabled__title">
+                    Found the Owner
+                </span>
+
+                <button class="close">close</button>
+
+                <div class="search-enabled__box">
+    
+                    <div class="search-enabled__avatar">
+                        <img src="images/pet-avatar.jpg" alt="dog">
+                    </div>
+    
+                    <div class="search-enabled__info">
+    
+                        <span class="search-enabled__tag">ghay12</span>
+    
+                        <span class="search-enabled__name">Item name: <span>Marco</span></span>
+    
+                    </div>
+    
+                </div>
+    
+                <ul class="search-enabled__list">
+    
+                    <li class="search-enabled__item">
+                        <span class="search-enabled__cell search-enabled__cell--owner">Owner Name</span>
+                        <span class="search-enabled__content">Riya Jain</span>
+                    </li>
+    
+                    <li class="search-enabled__item">
+                        <span class="search-enabled__cell search-enabled__cell--phone">Phone Number</span>
+                        <a class="search-enabled__content" href="tel:+1230000999">+123(0000)999</a>
+                    </li>
+    
+                    <li class="search-enabled__item">
+                        <span class="search-enabled__cell search-enabled__cell--email">Email Address</span>
+                        <a class="search-enabled__content" href="mailto:ho@riyaja.in">ho@riyaja.in</a>
+                    </li>
+    
+                    <li class="search-enabled__item">
+                        <span class="search-enabled__cell search-enabled__cell--address">Address</span>
+                        <address class="search-enabled__content">St Bernards 826400, San Diego
+                            California </address>
+                    </li>
+    
+                </ul>
+                
+            </div>
+    
+
+
+            <div class="modal__footer">
+
+                <button class="button">Contact Owner</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- <div class="modal">
+
+        <div class="modal__inner">
+
+            <div class="modal__header">
+
+                <span class="title title--modal">
+                    Contact Owner
+                </span>
+
+                <button class="close">close</button>
+
+            </div>
+
+            <div class="modal__content">
+                
+                <div class="contact-owner__notice">
+                    <p>
+                        Your Information will beprivate andconfidential. Spamming of any kind is strictly prohibited and will be reported.
+                    </p>
+                </div>
+                
+                <form class="contact-owner__form">
+
+                    <label class="label contact-owner__label">
+                        <span>Name</span>
+                        <input class="input contact-owner__input" type="text">
+                    </label>
+                    
+                    <label class="label contact-owner__label">
+                        <span>Phone Number</span>
+                        <input class="input contact-owner__input" type="number">
+                    </label>
+
+                    <label class="label contact-owner__label">
+                        <span>Message</span>
+                        <textarea class="textarea contact-owner__textarea"></textarea>
+                    </label>
+                    
+                </form>
+
+            </div>
+
+            <div class="modal__footer">
+
+                <button class="button">Send Message</button>
+
+            </div>
+
+        </div>
+
+    </div> -->
+   
+    <!-- <div class="modal">
+
+        <div class="modal__inner">
+
+            <div class="modal__header">
+
+                <span class="title title--modal">
+                    Edit Tag
+                </span>
+
+                <button class="close">close</button>
+
+            </div>
+
+            <div class="edit-tag__switch">Item Details</div>
+
+            <div class="modal__content">
+                
+                <div class="register-item__box">
+
+                    <div class="register-item__img">
+                        <span>Add an Image</span>
+                        <img src="images/pet-avatar.jpg" alt="img">
+                    </div>
+        
+                    <label class="register-item__label">
+                        <input class="register-item__file" type="file" accept="image/*">
+                        <span class="register-item__upload">Upload image</span>
+                        <span class="register-item__max">max file size 2mb</span>
+                    </label>
+                    
+                </div>   
+
+                <label class="label edit-tag__label">
+                    <span>Name</span>
+                    <input class="input edit-tag__input edit-tag__input--name" type="text">
+                </label>
+
+            </div>
+
+            <div class="edit-tag__switch edit-tag__switch--active">Address Details</div>
+
+            <div class="modal__content">
+
+                <div class="edit-tag__location">
+
+                    <label class="label">
+                        <span>Address</span>
+                        <input class="input edit-tag__input edit-tag__input--address" type="text">
+                    </label>
+                    
+                    <label class="label">
+                        <span>City</span>
+                        <select class="select edit-tag__select"></select>
+                    </label>
+    
+                    <label class="label">
+                        <span>State</span>
+                        <select class="select edit-tag__select"></select>
+                    </label>
+    
+                    <label class="label">
+                        <span>Country</span>
+                        <select class="select edit-tag__select">
+                            <option value="United States">United States</option>
+                        </select>
+                    </label>
+    
+                    <label class="label">
+                        <span>ZIP code</span>
+                        <select class="select edit-tag__select"></select>
+                    </label>
+                    
+                    <label class="label edit-tag__label">
+                        <span>Phone Number</span>
+                        <input class="input edit-tag__input" type="text">
+                    </label>
+
+                    <label class="label edit-tag__label">
+                        <span>Email Address</span>
+                        <input class="input edit-tag__input" type="text">
+                    </label>
+
+                </div>    
+
+            </div>
+
+            <div class="modal__footer">
+
+                <button class="button">Update</button>
+
+            </div>
+
+        </div>
+
+    </div> -->
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
