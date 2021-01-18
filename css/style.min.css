@@ -2048,7 +2048,7 @@ ul.tabs {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1330px) {
   .dashboard .burger-btn {
     display: block;
   }
@@ -2074,6 +2074,10 @@ ul.tabs {
   }
 }
 
+.dashboard__form {
+  position: relative;
+}
+
 .dashboard__input {
   width: 338px;
   height: 45px;
@@ -2084,6 +2088,23 @@ ul.tabs {
   background-image: url("../images/icons/search.svg");
   background-repeat: no-repeat;
   background-position: 4% center;
+}
+
+.dashboard__input--clear {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  font-size: 0;
+  line-height: 1;
+  background-image: url("../images/icons/clear-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  right: 30px;
+  top: 15px;
 }
 
 @media (max-width: 600px) {
@@ -2346,6 +2367,12 @@ ul.tabs {
   position: absolute;
   right: 14px;
   top: -2px;
+}
+
+@media (max-width: 400px) {
+  .table__item-state--block {
+    right: 5px;
+  }
 }
 
 .table__item-actions {
@@ -2827,6 +2854,7 @@ ul.tabs {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow-y: scroll;
 }
 
 .modal__content {
@@ -3013,7 +3041,8 @@ ul.tabs {
 .edit-tag__switch::after {
   position: absolute;
   content: '';
-  right: 0;
+  right: 30px;
+  top: 18px;
   background-image: url("../images/icons/arrow-triangle.svg");
   background-repeat: no-repeat;
   width: 17px;
@@ -3023,7 +3052,8 @@ ul.tabs {
 .edit-tag__switch--active::after {
   position: absolute;
   content: '';
-  right: 0;
+  right: 30px;
+  top: 18px;
   background-image: url("../images/icons/arrow-triangle.svg");
   width: 17px;
   height: 11px;
