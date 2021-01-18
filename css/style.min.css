@@ -1293,6 +1293,13 @@ body {
   }
 }
 
+.connect {
+  background-image: url("../images/main-img.png");
+  background-position: 77% center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .connect__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2670,6 +2677,11 @@ ul.tabs {
   font-size: 14px;
 }
 
+.modal-private__close {
+  top: 15px;
+  right: 15px;
+}
+
 .modal-private__title {
   position: relative;
   display: block;
@@ -2730,6 +2742,11 @@ ul.tabs {
   border-radius: 6px;
   font-size: 14px;
   padding: 10px 16px 10px 49px;
+}
+
+.modal-disabled__close {
+  top: 15px;
+  right: 15px;
 }
 
 .modal-disabled__title {
