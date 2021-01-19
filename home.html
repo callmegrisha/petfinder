@@ -34,7 +34,29 @@
 
                 <div class="header__id-form id-form">
 
-                    <input class="id-form__input" type="text" placeholder="Enter Tag ID">
+                    <div class="id-form__box">
+
+                        <input class="id-form__input" type="text" placeholder="Enter Tag ID">
+
+                        <div class="tooltip-tag">
+
+                            <div class="tooltip-tag__id">
+
+                                <div class="tooltip-tag__text">
+                                    The <span>six digit number on the back of the tag</span> is your items unique code that is used to find it if it ever go missing
+                                </div>
+
+                                <div class="tooltip-tag__img">
+                                    <img src="images/tooltip-img.jpg" alt="">
+                                </div>
+
+                                <a class="tooltip-tag__link" href="#">Example of a 6 digit Tag-ID </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                     <button class="id-form__btn" type="submit">Register item</button>
 
@@ -92,7 +114,7 @@
 
                         </div> -->
 
-                        <div class="modal-disabled">
+                        <!-- <div class="modal-disabled">
 
                             <span class="modal-disabled__title">This ID is Private</span>
 
@@ -100,9 +122,11 @@
 
                             <span class="modal-disabled__desc">But you can always reach the owner through us!</span>
 
-                        </div>
+                        </div> -->
 
                     </div>
+
+                    <div class="connect__img"></div>
 
                 </div>
 
@@ -274,6 +298,10 @@
         </ul>
 
     </footer>
+
+    <div class="menu-dashboard">
+        <button class="menu-dashboard__loggedin" type="button">Dashboard</button>
+    </div>
 
     <script src="js/main.min.js"></script>
 </body>
