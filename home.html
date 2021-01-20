@@ -14,7 +14,7 @@
 
         <div class="container">
 
-            <nav class="header__inner header__inner--active">
+            <nav class="header__inner">
 
                 <div class="logo">
                     <img src="images/home-logo.png" alt="logotype">
@@ -29,38 +29,43 @@
                     <li class="menu__item">
                         <a class="menu__link" href="#">Login</a>
                     </li>
+                    
+                    <li class="menu__item menu__item--form">
+
+                        <div class="header__id-form id-form">
+
+                            <div class="id-form__box">
+        
+                                <input class="id-form__input" type="text" placeholder="Enter Tag ID">
+        
+                                <div class="tooltip-tag">
+        
+                                    <div class="tooltip-tag__id">
+        
+                                        <div class="tooltip-tag__text">
+                                            The <span>six digit number on the back of the tag</span> is your items unique code that is used to find it if it ever go missing
+                                        </div>
+        
+                                        <div class="tooltip-tag__img">
+                                            <img src="images/tooltip-img.jpg" alt="">
+                                        </div>
+        
+                                        <a class="tooltip-tag__link" href="#">Example of a 6 digit Tag-ID </a>
+        
+                                    </div>
+        
+                                </div>
+        
+                            </div>
+
+                            <button class="id-form__btn" type="submit">Register item</button>
+                        </div>
+                       
+                    </li>
 
                 </ul>
 
-                <div class="header__id-form id-form">
-
-                    <div class="id-form__box">
-
-                        <input class="id-form__input" type="text" placeholder="Enter Tag ID">
-
-                        <div class="tooltip-tag">
-
-                            <div class="tooltip-tag__id">
-
-                                <div class="tooltip-tag__text">
-                                    The <span>six digit number on the back of the tag</span> is your items unique code that is used to find it if it ever go missing
-                                </div>
-
-                                <div class="tooltip-tag__img">
-                                    <img src="images/tooltip-img.jpg" alt="">
-                                </div>
-
-                                <a class="tooltip-tag__link" href="#">Example of a 6 digit Tag-ID </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <button class="id-form__btn" type="submit">Register item</button>
-
-                </div>
+                
 
                 <button class="burger-btn burger-btn--active">
                     Burger Button
