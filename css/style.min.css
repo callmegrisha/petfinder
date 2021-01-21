@@ -2004,15 +2004,6 @@ ul.tabs {
   }
 }
 
-.dashboard__nav-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .dashboard__tab {
   position: relative;
   padding: 0 35px 0 53px;
@@ -2204,6 +2195,12 @@ ul.tabs {
 @media (max-width: 1330px) {
   .dashboard .burger-btn {
     display: block;
+  }
+  .dashboard .burger-btn--active {
+    position: fixed;
+    -webkit-transform: translate(197px, 30px);
+        -ms-transform: translate(197px, 30px);
+            transform: translate(197px, 30px);
   }
 }
 
