@@ -433,7 +433,7 @@ body {
 
 .dropdown--active {
   display: block;
-  z-index: 1;
+  z-index: 10;
 }
 
 .dropdown--active::before {
@@ -1299,6 +1299,7 @@ body {
   font-size: 13px;
   color: #202020;
   outline: transparent;
+  border-bottom: 1px solid transparent;
 }
 
 .menu__link:focus {
@@ -1969,6 +1970,10 @@ ul.tabs {
   display: flex;
 }
 
+.dashboard__close {
+  display: none;
+}
+
 .dashboard__nav {
   position: fixed;
   background-color: #F8F8F8;
@@ -1994,6 +1999,18 @@ ul.tabs {
     left: 0;
     z-index: 10;
   }
+  .dashboard__nav .dashboard__close {
+    display: block;
+  }
+}
+
+.dashboard__nav-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .dashboard__tab {
@@ -3347,6 +3364,12 @@ ul.tabs {
   min-height: 310px;
 }
 
+@media (max-width: 600px) {
+  .tooltip-tag {
+    top: 115px;
+  }
+}
+
 .tooltip-tag__icon {
   width: 20px;
   height: 20px;
@@ -3365,6 +3388,12 @@ ul.tabs {
   background-size: cover;
   width: 20px;
   height: 20px;
+}
+
+@media (max-width: 600px) {
+  .tooltip-tag__icon {
+    top: -103px;
+  }
 }
 
 .tooltip-tag__id {
