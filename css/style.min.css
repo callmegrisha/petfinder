@@ -1277,12 +1277,17 @@ body {
   }
   .menu--active .menu__item {
     margin-bottom: 5px;
-    background-color: #fff;
-    padding: 9px 0 9px 20px;
   }
   .menu--active .menu__item--form {
     padding: 20px;
     min-height: 132px;
+    background-color: #fff;
+  }
+  .menu--active .menu__link {
+    display: inline-block;
+    padding: 9px 0 9px 20px;
+    background-color: #fff;
+    width: 100%;
   }
 }
 
@@ -3336,7 +3341,6 @@ ul.tabs {
   min-width: 221px;
   width: 100%;
   min-height: 310px;
-  display: none;
 }
 
 .tooltip-tag__icon {
